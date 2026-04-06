@@ -1,6 +1,6 @@
 function login(user) {
-  if (user.role === "student") {
-    return "Welcome Student";
+  if (user.type === "student") {
+    return "Student Dashboard";
   }
   if (user.role === "admin") {
     return "Welcome Admin";
