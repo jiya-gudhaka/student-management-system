@@ -1,7 +1,15 @@
-function login(user) {
-  if (user.role === "student") {
-    return "Welcome Student";
-  }
-  return "Access Denied";
+const login = (user) => {
+
+switch(user.role){
+
+case "student":
+return "Welcome Student";
+
+default:
+return "Access Denied";
+
 }
+
+};
+
 module.exports = login;
