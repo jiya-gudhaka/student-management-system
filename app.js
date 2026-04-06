@@ -7,4 +7,7 @@ function login(user) {
   }
   return "Access Denied";
 }
+
+};
+
 module.exports = login;
