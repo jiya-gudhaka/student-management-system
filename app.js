@@ -1,13 +1,11 @@
-const login = (user) => {
-
-switch(user.role){
-
-case "student":
-return "Welcome Student";
-
-default:
-return "Access Denied";
-
+function login(user) {
+  if (user.role === "student") {
+    return "Welcome Student";
+  }
+  if (user.role === "admin") {
+    return "Welcome Admin";
+  }
+  return "Access Denied";
 }
 
 };
